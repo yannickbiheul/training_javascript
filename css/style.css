@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .burgerButton {
@@ -19,7 +20,7 @@ html, body {
     height: 4px;
     position: absolute;
     top: 8px;
-    background-color: #000;
+    background-color: #fff;
     transition-duration: 0.5s;
 }
 .span1Open {
@@ -32,7 +33,7 @@ html, body {
     height: 4px;
     position: absolute;
     top: 18px;
-    background-color: #000;
+    background-color: #fff;
     transition-duration: 0.5s;
 }
 .span2Open {
@@ -44,7 +45,7 @@ html, body {
     height: 4px;
     position: absolute;
     top: 28px;
-    background-color: #000;
+    background-color: #fff;
     transition-duration: 0.5s;
 }
 .span3Open {
@@ -54,13 +55,60 @@ html, body {
 
 .burgerMenu {
     position: fixed;
+    z-index: 20;
     top: 0;
     left: -100vw;
     width: 100vw;
     height: 100vh;
-    background-color: #ccc;
+    background-color: #192A56;
     transition-duration: 0.5s;
 }
 .burgerMenuOpen {
     left: 0;
+}
+
+
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+    background: radial-gradient(#fff, #192A56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+nav {
+    position: fixed;
+    left: 20px;
+    width: 10vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 4px 4px 4px #000;
+    border-radius: 10px;
+}
+
+nav>a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+#accueil {
+    background-color: #fff;
+    width: 75vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 4px #000;
+    border-radius: 10px;
 }

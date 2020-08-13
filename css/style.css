@@ -2,3 +2,27 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+.burgerButton {
+    position: fixed;
+    z-index: 25;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.burgerMenu {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ccc;
+    transition-duration: 0.5s;
+}
+.burgerMenuOpen {
+    left: 0;
+}

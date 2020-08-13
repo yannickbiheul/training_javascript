@@ -99,6 +99,20 @@ nav>a {
     color: #000;
 }
 
+aside {
+    position: fixed;
+    right: 20px;
+    width: 10vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 4px 4px 4px #000;
+    border-radius: 10px;
+}
+
 
 
 #accueil {
@@ -111,4 +125,16 @@ nav>a {
     align-items: center;
     box-shadow: 4px 4px 4px #000;
     border-radius: 10px;
+}
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 1200px) {
+    nav {
+        display: none;
+    }
+    aside {
+        display: none;
+    }
 }

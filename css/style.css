@@ -81,11 +81,12 @@ main {
 
 
 nav {
+    display: none;
     position: fixed;
     left: 20px;
     width: 10vw;
     height: 75vh;
-    display: flex;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -100,11 +101,12 @@ nav>a {
 }
 
 aside {
+    display: none;
     position: fixed;
     right: 20px;
     width: 10vw;
     height: 75vh;
-    display: flex;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -125,7 +127,10 @@ aside {
     align-items: center;
     box-shadow: 4px 4px 4px #000;
     border-radius: 10px;
+    transition-duration: 1s;
+    margin-left: -200vw;
 }
+
 
 
 

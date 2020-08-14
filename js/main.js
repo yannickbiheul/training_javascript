@@ -19,7 +19,3 @@ function menuOpen() {
 burgerButton.addEventListener('click', menuOpen);
 
 
-/* APPARITION DE L'ACCUEIL */
-let accueil = document.querySelector('#accueil');
-accueil.style.marginLeft = "0";
-

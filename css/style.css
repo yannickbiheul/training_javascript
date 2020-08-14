@@ -70,12 +70,13 @@ html, body {
 
 
 main {
-    width: 100vw;
     min-height: 100vh;
     background: radial-gradient(#fff, #192A56);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 75px;
 }
 
 
@@ -117,7 +118,7 @@ aside {
 
 
 
-#accueil {
+section {
     background-color: #fff;
     width: 75vw;
     height: 75vh;
@@ -128,8 +129,9 @@ aside {
     box-shadow: 4px 4px 4px #000;
     border-radius: 10px;
     transition-duration: 1s;
-    margin-left: -200vw;
+    margin: 40px 0 40px 0;
 }
+
 
 
 

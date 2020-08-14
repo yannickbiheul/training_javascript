@@ -31,7 +31,69 @@
         </aside>
 
         <section id="accueil">
-            <h1>Entraînement au JavaScript</h1>
+            <h1>Valider un rendez-vous</h1>
+            <h2>Objectif</h2>
+            <p>Déterminer si un rendez-vous se termine avant la fin de la journée.</p>
+            <p>Début du rendez-vous : 15H40.<br>
+            Fin du rendez-vous : 16H30.</p>
+            <p>Durée du rendez-vous (minutes) : variable.</p>
+            <h2>Sortie attendue : </h2>
+            <p>
+                <ul>
+                    <li>Si la fin du rendez-vous est avant 16h30, afficher "RDV OK"</li>
+                    <li>Si la fin du rendez-vous est après 16h30, afficher "RDV impossible"</li>
+                    <li>Afficher "Le RDV se terminera à HHhMM"</li>
+                </ul>
+            </p>
+        </section>
+
+        <section id="aborder">
+            <h1>Comment aborder le problème</h1>
+            <ol>
+                <li>Comment pense un développeur ?</li>
+                <li>Par où commencer un programme ?</li>
+                <li>Comment déboguer un programme ?</li>
+            </ol>
+            <ol>
+                <li>Découverte du problème par l'exemple</li>
+                <li>Rédaction d'un algorithme</li>
+                <li>Implémentation et test</li>
+                <li>Si le test ne fonctionne pas, nouvelle itération</li>
+            </ol>
+        </section>
+
+        <section id="decouverte">
+            <h1>Découverte du problème par l'exemple</h1>
+            <p>
+                Début du rendez-vous : 15h40<br>
+                Fin de journée : 16h30<br>
+                Durée du RDV (minutes) : variable
+            </p>
+            <p>
+                Exemple 1 : durée 15 minutes
+            </p>
+            <ol>
+                <li>Fin du RDV ?</li>
+                <p>15h40 + 15 minutes = 15h55</p>
+                <li>Comparer 15h55 à 16h30</li>
+                <p>Si avant, afficher "RDV OK"<br>
+                Si après, afficher "RDV impossible"</p>
+                <li>"Le RDV se terminera à 15h55"</li>
+            </ol>
+        </section>
+
+        <section id="algo">
+            <h1>Création d'un algorithme</h1>
+            <ul>
+                <li>Comment gérer un horaire ?</li>
+                <li>Quel type de données utiliser ?</li>
+                <li>Utiliser 2 variables :
+                    <ul>
+                        <li>let finRdvHeures = 15;</li>
+                        <li>let finRdvMinutes = 55;</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
 
     </main>

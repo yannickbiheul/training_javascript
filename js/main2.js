@@ -13,13 +13,13 @@ let finJourneeMinutes = 30;
 console.log("La journée se termine à " + finJourneeHeures + "h" + finJourneeMinutes);
 
 // Durée du rendez-vous 
-let duree = 15;
+let duree = 25;
 console.log("Le RDV dure " + duree + " minutes.");
 
 // Étape 1 : Calcul de la fin du RDV
 let finRdvHeures = debutRdvHeures;
 let finRdvMinutes = debutRdvMinutes + duree;
-if ((duree + debutRdvMinutes) >= 60) {
+if (finRdvMinutes >= 60) {
     finRdvHeures += 1;
     finRdvMinutes -= 60;
     if (finRdvMinutes < 10) {

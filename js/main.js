@@ -18,46 +18,5 @@ function menuOpen() {
 /* Ajout d'un écouteur d'événement sur le bouton */
 burgerButton.addEventListener('click', menuOpen);
 
-/* Valider un rendez-vous */
 
-// Exemple 1 : pour une durée de RDV de 15 minutes
-
-// Début du RDV : 15h40
-let debutRdvHeures = 15;
-let debutRdvMinutes = 40;
-
-// Fin de journée : 16h30
-let finJourneeHeures = 16;
-let finJourneeMinutes = 30;
-
-// Durée du rendez-vous 
-let duree = 95;
-
-// Étape 1 : Calcul de la fin du RDV
-let finRdvHeures = debutRdvHeures;
-let finRdvMinutes = debutRdvMinutes + duree;
-
-function conversion() {
-    if (finRdvMinutes >= 120) {
-        finRdvHeures += 2;
-        finRdvMinutes -= 60;
-    }
-    if (finRdvMinutes >= 60) {
-        finRdvHeures += 1;
-        finRdvMinutes -= 60;
-        if (finRdvMinutes < 10) {
-            finRdvMinutes = "0" + finRdvMinutes;
-        }
-    }
-}
-
-conversion();
-
-
-
-// Étape 2 : Est-ce que la fin du RDV est avant la fin de la journée ?
-
-
-// Étape 3 : Affichage de l'heure de fin du RDV
-console.log("Le RDV se terminera à " + finRdvHeures + "h" + finRdvMinutes);
 

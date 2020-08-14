@@ -31,20 +31,25 @@ let finJourneeHeures = 16;
 let finJourneeMinutes = 30;
 
 // Durée du rendez-vous 
-let duree = 55;
+let duree = 25;
 
 // Étape 1 : Calcul de la fin du RDV
 let finRdvHeures = debutRdvHeures;
 let finRdvMinutes = debutRdvMinutes + duree;
 
-if (finRdvMinutes >= 60) {
-    finRdvHeures += 1;
-    finRdvMinutes -= 60;
+function conversion() {
+    if (finRdvMinutes >= 60) {
+        finRdvHeures += 1;
+        finRdvMinutes -= 60;
+        if (finRdvMinutes < 10) {
+            finRdvMinutes = "0" + finRdvMinutes;
+        }
+    }
 }
 
-if (finRdvMinutes < 10) {
-    finRdvMinutes = "0" + finRdvMinutes;
-}
+conversion();
+
+
 
 // Étape 2 : Est-ce que la fin du RDV est avant la fin de la journée ?
 if (finRdvHeures <= finJourneeHeures || finRdvMinutes < finJourneeMinutes) {

@@ -93,6 +93,36 @@
                         <li>let finRdvMinutes = 55;</li>
                     </ul>
                 </li>
+                <li>Faire de même avec les horairess du début du RDV :
+                    <ul>
+                        <li>let debutRdvHeures = 15;</li>
+                        <li>let debutRdvMinutes = 40;</li>
+                    </ul>
+                </li>
+                <li>Et avec la fin de la journée :
+                    <ul>
+                        <li>let finJourneeHeures = 16;</li>
+                        <li>let finJourneeMinutes = 30;</li>
+                    </ul>
+                </li>
+                <li>Calculer la fin du RDV :
+                    <ul>
+                        <li>finRdvHeures = debutRdvHeures</li>
+                        <li>finRdvMinutes = debutRdvMinutes + duree</li>
+                    </ul>
+                </li>
+                <li>Comparer 15h55 à 16h30
+                    <ul>
+                        <li>15h55 avant ou après 16h30 ?</li>
+                        <li>15h < 16h : Vrai, afficher "RDV OK"</li>
+                        <li>finRdvHeures < finJourneeHeures</li>
+                    </ul>
+                </li>
+                <li>"Le rendez-vous se terminera à 15h55"
+                    <ul>
+                        <li>Afficher ("Le rendez-vous se terminera à " + finRdvHeures + "h" + finRdvMinutes)</li>
+                    </ul>
+                </li>
             </ul>
         </section>
 

@@ -21,31 +21,42 @@ console.log("Le RDV dure " + duree + " minutes.");
 finRdvHeures = debutRdvHeures;
 finRdvMinutes = debutRdvMinutes + duree;
 finRdvJour = 0;
-while (finRdvMinutes >= 60) {
-    finRdvHeures += 1;
-    finRdvMinutes -=60;
+function calculMinutes() {
+    while (finRdvMinutes >= 60) {
+        finRdvHeures += 1;
+        finRdvMinutes -= 60;
+    }
 }
-while (finRdvHeures >= 24) {
-    finRdvJour += 1;
-    finRdvHeures -= 24;
+function calculHeures() {
+    while (finRdvHeures >= 24) {
+        finRdvJour += 1;
+        finRdvHeures -= 24;
+    }
 }
+
+calculMinutes();
+calculHeures();
+
 // console.log("Heure de fin de RDV : " + finRdvHeures);
 // console.log("Minutes de fin de RDV : " + finRdvMinutes);
 // console.log("Nombre de jours : " + finRdvJour);
 
 // Étape 3 : Est-ce que la fin du RDV est avant la fin de la journée ?
-if (finRdvJour == 0) {
-    if (finRdvHeures < finJourneeHeures || finRdvHeures == finJourneeHeures && finRdvMinutes <= finJourneeMinutes) {
-        console.log("RDV OK");
-        rdv = true;
+function rdvAvantFinJournee() {
+    if (finRdvJour == 0) {
+        if (finRdvHeures < finJourneeHeures || finRdvHeures == finJourneeHeures && finRdvMinutes <= finJourneeMinutes) {
+            console.log("RDV OK");
+            rdv = true;
+        } else {
+            console.log("RDV impossible");
+            rdv = false;
+        }
     } else {
         console.log("RDV impossible");
         rdv = false;
     }
-} else {
-    console.log("RDV impossible");
-    rdv = false;
 }
+rdvAvantFinJournee();
 // console.log(rdv);
 
 // Étape 4 : Affichage de l'heure de fin du RDV

@@ -6,4 +6,10 @@ Les exercices et projets de la formation de [JavaScript de Zéro](https://www.ja
 
 Utilisation des variables et des instructions conditionnelles.
 
-Comment pense un développeur.
+Apprentissage du déroulement d'un programme.
+
+Sachant que la journée se termine à 16h30, et que le rendez-vous commence à 15h40, déterminer si ce dernier est possible en fonction de sa durée.
+
+# 1ère itération
+
+Essai du code avec une durée de 15 minutes.

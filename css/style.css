@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    height: 100vh;
 }
 
 .burgerButton {
@@ -70,14 +71,40 @@ html, body {
 
 
 main {
-    min-height: 100vh;
+    height: 100%;
     background: radial-gradient(#fff, #192A56);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 75px;
 }
 
+.boxEssai {
+    width: 75%;
+    height: 75%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choixHeure {
+    width: 500px;
+    height: 65px;
+    border: 1px solid #000;
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enterNumber {
+    margin: 0 10px 0 10px;
+}
+
+.validNumber {
+    margin: 0 10px 0 10px;
+}
 
 /* RESPONSIVE */

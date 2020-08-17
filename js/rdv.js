@@ -1,20 +1,28 @@
-// VARIABLES
+                                                            /* VARIABLES */
+
+// Variables entrées utilisateur
 let enterNumber = document.querySelector('.enterNumber');
 let validNumber = document.querySelector('.validNumber');
 let userTime = "";
+
+// Variables interface
 let resultDuree = document.querySelector('.resultDuree');
+let resultFinRdv = document.querySelector('.resultFinRdv');
+let resultRdv = document.querySelector('.resultRdv');
+let suppr = document.querySelector('.suppr');
+
+// Variables du programme
 let debutRdvHeures = 15;
 let debutRdvMinutes = 40;
 let finJourneeHeures = 16;
 let finJourneeMinutes = 30;
-let resultFinRdv = document.querySelector('.resultFinRdv');
 let finRdvHeures = "";
 let finRdvMinutes = "";
-let suppr = document.querySelector('.suppr');
-let resultRdv = document.querySelector('.resultRdv');
 
-// Fonction pour calculer la durée
-function calculDuree() {
+                                                            /* FONCTIONS */
+
+// Fonction principale
+function calculRdv() {
     userTime = parseInt(enterNumber.value);
     enterNumber.value = "";
     resultDuree.innerHTML = userTime + " minutes.";
@@ -22,19 +30,27 @@ function calculDuree() {
     validNumber.style.display = "none";
     finRdvHeures = debutRdvHeures;
     finRdvMinutes = debutRdvMinutes + userTime;
-    // Si on dépasse les 60 minutes :
+    soixanteMinutes();
+    vingtQuatreHeures();
+    dixaineHeures();
+    dixaineMinutes();
+    verifHoraire();
+}
+
+// Fonction si on dépasse les 60 minutes :
+function soixanteMinutes() {
     while (finRdvMinutes >= 60) {
         finRdvHeures += 1;
         finRdvMinutes -= 60;
     }
-    // Si on dépasse les 24 heures :
+}
+
+// Fonction si on dépasse les 24 heures :
+function vingtQuatreHeures() {
     while (finRdvHeures >= 24) {
         finRdvJours += 1;
         finRdvHeures -= 24;
     }
-    dixaineHeures();
-    dixaineMinutes();
-    verifHoraire();
 }
 
 // Fonction pour ajouter un 0 si moins de 10 heures :
@@ -80,10 +96,12 @@ function verifHoraire() {
     }
 }
 
-// Écouteur d'événement sur le bouton Envoyer
-validNumber.addEventListener('click', calculDuree);
+                                                            /* ÉCOUTEURS D'ÉVÉNEMENTS */
 
-// Écouteur d'événement sur le bouton Recommencer
+// Bouton Envoyer
+validNumber.addEventListener('click', calculRdv);
+
+// Bouton Recommencer
 suppr.addEventListener('click', function() {
     window.location.reload();
 })

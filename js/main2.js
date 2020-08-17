@@ -14,7 +14,18 @@ let debutRdvMinutes = 40;
 console.log("Le RDV débute à " + debutRdvHeures + "h" + debutRdvMinutes);
 
 // Durée du rendez-vous 
-let duree = 5;
+let enterNumber = document.querySelector('.enterNumber');
+let validNumber = document.querySelector('.validNumber');
+let dureeUtilisateur = 0;
+let duree = 0;
+
+validNumber.addEventListener('click', function() {
+    dureeUtilisateur = enterNumber.value;
+    console.log(dureeUtilisateur);
+    enterNumber.value = "";
+})
+duree = dureeUtilisateur;
+
 console.log("Le RDV dure " + duree + " minutes.");
 
 // Étape 1 : Calcul de la fin du RDV

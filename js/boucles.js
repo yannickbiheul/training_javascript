@@ -15,3 +15,10 @@ do {
     compteur2++;
 } while (compteur2 < 3);
 console.log("Fin de la boucle do while");
+
+// BOUCLE FOR
+for (let compteur3 = 0; compteur3 < 3; compteur3++) {
+    console.log("Compteur : " + compteur3);
+    console.log("Instruction de la boucle for");
+}
+console.log("Fin de la boucle for");

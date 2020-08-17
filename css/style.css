@@ -71,7 +71,7 @@ html, body {
 
 
 main {
-    height: 100%;
+    min-height: 100vh;
     background: radial-gradient(#fff, #192A56);
     display: flex;
     flex-direction: column;
@@ -80,13 +80,14 @@ main {
 }
 
 .boxEssai {
-    width: 75%;
-    height: 75%;
+    width: 75vw;
+    height: 35vh;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px 0 20px 0;
 }
 
 .choixHeure {

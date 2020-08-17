@@ -7,8 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
-    <script src="js/main2.js" defer></script>
+    <!-- <script src="js/main2.js" defer></script> -->
     <!-- <script src="js/boucles.js" defer></script> -->
+    <script src="js/rdv.js" defer></script>
 </head>
 <body>
 
@@ -27,16 +28,26 @@
         <div class="boxEssai">
             <h1>Valider un rendez-vous</h1>
             <p>Le RDV commence à 15h40, et la journée se termine à 16h30.</p>
+            <p>Entrez une durée (en minutes) et voyons voir si le RDV est possible ou non.</p>
+
             <div class="choixHeure">
                 <input type="number" class="enterNumber">
                 <input type="submit" class="validNumber">
             </div>
-            <p>Entrez une durée (en minutes) et voyons voir si le RDV est possible ou non.</p>
+            
+            <div class="resultBox">
+                <div class="ligneDuree">
+                    <p>Durée du rendez-vous : </p>
+                    <p class="resultDuree"></p>
+                </div>
+                <div class="ligneFinRdv">
+                    <p>Le RDV se terminerait à :</p>
+                    <p class="resultFinRdv"></p>
+                </div>
+                <p class="resultRdv"></p>   
+            </div>
         </div>
 
-        <div class="boxEssai">
-            <h1>Les boucles</h1>
-        </div>
 
     </main>
 

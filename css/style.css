@@ -157,6 +157,33 @@ main {
     height: 50px;
     border: 1px solid #000;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton {
+    /* border: 1px solid #000; */
+    padding: 20px;
+    margin-bottom: 40px;
+    width: 200px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bouton>a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2196F3;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #000;
+}
+.bouton>a:hover {
+    padding: 15px;
 }
 
 /* RESPONSIVE */

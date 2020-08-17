@@ -4,3 +4,4 @@ while (compteur < 3) {
     console.log("Instruction de la boucle while");
     compteur++;
 }
+console.log("Fin de la boucle");

@@ -7,6 +7,12 @@ while (compteur < 3) {
 }
 console.log("Fin de la boucle while");
 
+let rireMoqueur = "Mouah";
+while (rireMoqueur !== "Mouahahahahahahah") {
+    rireMoqueur += "ah";
+}
+console.log(rireMoqueur);
+
 // BOUCLE DO WHILE
 let compteur2 = 0;
 do {

@@ -6,6 +6,7 @@ html, body {
     --red: #F44336;
     --green: #4CAF50;
     --blue: #2196F3;
+    --noir: #2c3e50;
 }
 
 .burgerButton {
@@ -81,7 +82,20 @@ html, body {
     font-size: 2em;
 }
 
-
+header {
+    position: fixed;
+    width: 75vw;
+    height: 80px;
+    margin: auto;
+    z-index: 15;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+header>h1 {
+    color: #fff;
+    margin-left: 20px;
+}
 
 main {
     min-height: 100vh;
@@ -93,14 +107,22 @@ main {
 }
 
 .boxEssai {
-    width: 75vw;
+    width: 50vw;
     min-height: 75vh;
-    background-color: #fff;
+    background-color: var(--noir);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 20px 0 20px 0;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #000;
+}
+.boxEssai>h2 {
+    color: #fff;
+}
+.boxEssai>p {
+    color: #fff;
 }
 
 .choixHeure {
@@ -205,15 +227,16 @@ main {
     align-items: center;
 }
 .inputNumber>input {
+    margin: 0 10px 20px 10px;
     height: 35px;
 }
 .inputNumber>a {
-    margin: 0 10px 0 10px;
+    margin: 0 10px 20px 10px;
     text-decoration: none;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 4px 4px 4px #ccc;
+    box-shadow: 4px 4px 4px #000;
     font-weight: bold;
 }
 
@@ -224,6 +247,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
 }
 
 .result2 {
@@ -233,6 +257,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
 }
 
 .boutons {
@@ -244,7 +269,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .boutons>a {
     margin: 0 10px 0 10px;
@@ -252,7 +277,7 @@ main {
     color: #fff;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 4px 4px 4px #ccc;
+    box-shadow: 4px 4px 4px #000;
     font-weight: bold;
 }
 .ok {
@@ -266,3 +291,14 @@ main {
 }
 
 /* RESPONSIVE */
+@media screen and (max-width: 1200px) {
+    .boxEssai {
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .boxEssai {
+        width: 90vw;
+    }
+}

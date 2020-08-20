@@ -1,4 +1,4 @@
-                                        /* BURGER MENU */
+/* BURGER MENU */
 
 /* Déclaration des variables */
 let burgerButton = document.querySelector('.burgerButton');

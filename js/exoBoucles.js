@@ -17,7 +17,7 @@ function ajouterNombre() {
     number = parseInt(enterNumber.value);
     result.innerHTML += number + " ";
     somme += number;
-    console.log(number + ", la somme est de : " + somme);
+    // console.log(number + ", la somme est de : " + somme);
     enterNumber.value = "";
     compteur++;
 }

@@ -18,6 +18,19 @@
 
 /* Affichage de plusieurs étoiles en ordre croissant */
 function croissant(nombre) {
-    let ligne = "";
-    
+    let etoiles = "";
+    for (let ligne = 0; ligne < nombre; ligne++) {
+        etoiles += "*";
+        console.log(etoiles);
+    }
 }
+
+function decroissant(nombre) {
+    let etoiles = "";
+    for (let ligne = nombre; ligne >= 0; ligne--) {
+        etoiles += "*";
+        console.log(etoiles);
+    }
+}
+
+decroissant(5);

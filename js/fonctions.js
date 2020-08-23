@@ -25,12 +25,15 @@ function croissant(nombre) {
     }
 }
 
-function decroissant(nombre) {
-    let etoiles = "";
-    for (let ligne = nombre; ligne >= 0; ligne--) {
-        etoiles += "*";
-        console.log(etoiles);
-    }
-}
+croissant(5);
 
-decroissant(5);
+/* Affichage de plusieurs étoiles en ordre décroissant */
+// function decroissant(nombre) {
+//     let etoiles = "";
+//     for (let ligne = nombre; ligne >= 0; ligne--) {
+//         etoiles += "*";
+//         console.log(etoiles);
+//     }
+// }
+
+// decroissant(5);

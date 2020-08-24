@@ -18,6 +18,18 @@ function triangleCroissant(largeurTriangle) {
         ligne = "";
     }
 }
-triangleCroissant(10);
+// triangleCroissant(10);
 
 /* Affichage de plusieurs étoiles en ordre décroissant */
+
+function triangleDecroissant(largeurTriangle) {
+    let ligne = "";
+    for (let positionLigne = largeurTriangle; positionLigne > 0; positionLigne--) {
+        for (let position = 0; position < positionLigne; position++) {
+            ligne += "*";
+        }
+        console.log(ligne);
+        ligne = "";
+    }
+}
+triangleDecroissant(10);

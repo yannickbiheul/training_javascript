@@ -24,7 +24,7 @@ function triangleCroissant(largeurTriangle) {
 
 function triangleDecroissant(largeurTriangle) {
     let ligne = "";
-    for (let positionLigne = largeurTriangle; positionLigne > 0; positionLigne--) {
+    for (let positionLigne = largeurTriangle - 1; positionLigne > 0; positionLigne--) {
         for (let position = 0; position < positionLigne; position++) {
             ligne += "*";
         }
@@ -32,4 +32,12 @@ function triangleDecroissant(largeurTriangle) {
         ligne = "";
     }
 }
-triangleDecroissant(10);
+// triangleDecroissant(10);
+
+/* Affichage des 2 triangles à la suite */
+
+function triangle(largeur) {
+    triangleCroissant(largeur);
+    triangleDecroissant(largeur);
+}
+triangle(10);

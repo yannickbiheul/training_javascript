@@ -1,10 +1,3 @@
-// Affichage un triangle sur la console
-
-/* Affichage d'une étoile */
-// function afficherEtoile() {
-//     console.log("*");
-// }
-// afficherEtoile();
 
 /* Affichage de plusieurs étoiles en ordre croissant */
 
@@ -18,7 +11,7 @@ function triangleCroissant(largeurTriangle) {
         ligne = "";
     }
 }
-// triangleCroissant(10);
+
 
 /* Affichage de plusieurs étoiles en ordre décroissant */
 
@@ -32,7 +25,7 @@ function triangleDecroissant(largeurTriangle) {
         ligne = "";
     }
 }
-// triangleDecroissant(10);
+
 
 /* Affichage des 2 triangles à la suite */
 
@@ -40,4 +33,5 @@ function triangle(largeur) {
     triangleCroissant(largeur);
     triangleDecroissant(largeur);
 }
+
 triangle(10);

@@ -19,7 +19,7 @@ function triangleCroissant(largeur) {
 }
 // triangleCroissant(10);
 
-                                        /* Affichage de plusieurs étoiles en ordre croissant et paires */
+                                        /* Affichage de plusieurs étoiles en ordre croissant et pairs */
 function triangleCroissantPair(largeur) {
     let ligne = "";
     let compteur = 0;
@@ -35,6 +35,20 @@ function triangleCroissantPair(largeur) {
     }
 }
 // triangleCroissantPair(10);
+
+                                        /* Affichage de plusieurs étoiles en ordre croissant et impairs */
+function triangleCroissantImpair(largeur) {
+    let ligne = "";
+    for (let positionLigne = 1; positionLigne <= largeur; positionLigne+= 2) {
+        for (let position = 1; position <= positionLigne; position++) {
+            ligne+= "*";
+        }
+        console.log(ligne);
+        ligne = "";
+    }
+}
+triangleCroissantImpair(9);
+
 
                                         /* Affichage de plusieurs étoiles en ordre décroissant */
 function triangleDecroissant(largeur) {
@@ -55,7 +69,7 @@ function triangleDecroissant(largeur) {
 }
 // triangleDecroissant(5);
 
-                                        /* Affichage de plusieurs étoiles en ordre décroissant et paires */
+                                        /* Affichage de plusieurs étoiles en ordre décroissant et pairs */
 function triangleDecroissantPair(largeur) {
     let ligne = "";
     for (let positionLigne = largeur - 2; positionLigne > 0; positionLigne-= 2) {
@@ -68,17 +82,30 @@ function triangleDecroissantPair(largeur) {
 }
 // triangleDecroissantPair(10);
 
+                                        /* Affichage de plusieurs étoiles en ordre décroissant et impairs */
+function triangleDecroissantImpair(largeur) {
+
+}
+
 
 
                                         /* Affichage des 2 triangles à la suite */
+/* Triangle */
 function triangle(largeur) {
     triangleCroissant(largeur);
     triangleDecroissant(largeur);
 }
 // triangle(8);
 
+/* Triangle Pair */
 function trianglePair(largeur) {
     triangleCroissantPair(largeur);
     triangleDecroissantPair(largeur);
 }
-trianglePair(10);
+// trianglePair(10);
+
+/* Triangle impair */
+function triangleImpair(largeur) {
+
+}
+// triangleIpaire(9);

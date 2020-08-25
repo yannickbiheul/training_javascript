@@ -84,8 +84,16 @@ function triangleDecroissantPair(largeur) {
 
                                         /* Affichage de plusieurs étoiles en ordre décroissant et impairs */
 function triangleDecroissantImpair(largeur) {
-
+    let ligne = "";
+    for (let positionLigne = largeur - 2; positionLigne > 0; positionLigne -= 2) {
+        for (let position = 1; position <= positionLigne; position++) {
+            ligne += "*";
+        }
+        console.log(ligne);
+        ligne = "";
+    }
 }
+triangleDecroissantImpair(9);
 
 
 

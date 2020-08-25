@@ -47,7 +47,7 @@ function triangleCroissantImpair(largeur) {
         ligne = "";
     }
 }
-triangleCroissantImpair(9);
+// triangleCroissantImpair(9);
 
 
                                         /* Affichage de plusieurs étoiles en ordre décroissant */
@@ -93,7 +93,7 @@ function triangleDecroissantImpair(largeur) {
         ligne = "";
     }
 }
-triangleDecroissantImpair(9);
+// triangleDecroissantImpair(9);
 
 
 
@@ -114,6 +114,7 @@ function trianglePair(largeur) {
 
 /* Triangle impair */
 function triangleImpair(largeur) {
-
+    triangleCroissantImpair(largeur);
+    triangleDecroissantImpair(largeur);
 }
-// triangleIpaire(9);
+triangleImpair(9);

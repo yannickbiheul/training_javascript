@@ -1,5 +1,5 @@
 
-/* Affichage de plusieurs étoiles en ordre croissant */
+                                        /* Affichage de plusieurs étoiles en ordre croissant */
 function triangleCroissant(largeur) {
     let ligne = "";
     for (let positionLigne = 0; positionLigne < largeur; positionLigne++) {
@@ -19,7 +19,7 @@ function triangleCroissant(largeur) {
 }
 // triangleCroissant(10);
 
-/* Affichage de plusieurs étoiles en ordre croissant et paires */
+                                        /* Affichage de plusieurs étoiles en ordre croissant et paires */
 function triangleCroissantPair(largeur) {
     let ligne = "";
     let compteur = 0;
@@ -36,7 +36,7 @@ function triangleCroissantPair(largeur) {
 }
 // triangleCroissantPair(10);
 
-/* Affichage de plusieurs étoiles en ordre décroissant */
+                                        /* Affichage de plusieurs étoiles en ordre décroissant */
 function triangleDecroissant(largeur) {
     let ligne = "";
     for (let positionLigne = largeur - 1; positionLigne > 0; positionLigne--) {
@@ -55,7 +55,7 @@ function triangleDecroissant(largeur) {
 }
 // triangleDecroissant(5);
 
-/* Affichage de plusieurs étoiles en ordre décroissant et paires */
+                                        /* Affichage de plusieurs étoiles en ordre décroissant et paires */
 function triangleDecroissantPair(largeur) {
     let ligne = "";
     for (let positionLigne = largeur - 2; positionLigne > 0; positionLigne-= 2) {
@@ -70,7 +70,7 @@ function triangleDecroissantPair(largeur) {
 
 
 
-/* Affichage des 2 triangles à la suite */
+                                        /* Affichage des 2 triangles à la suite */
 function triangle(largeur) {
     triangleCroissant(largeur);
     triangleDecroissant(largeur);

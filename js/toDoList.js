@@ -5,6 +5,6 @@ console.log(suppr);
 
 for (let i = 0; i < suppr.length; i++) {
     suppr[i].addEventListener('click', function() {
-        div[i].style.display = "none";
+        div[i].style.opacity = "0";
     })
 }

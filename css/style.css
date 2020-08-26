@@ -302,6 +302,7 @@ main {
     align-items: center;
     border-radius: 5px;
     box-shadow: 0 0 20px #000;
+    margin: 40px 0 40px 0;
 }
 
 .rond {
@@ -337,15 +338,18 @@ main {
     height: 90%;
     /* border: 1px solid #fff; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.croix>a {
+
+.suppr {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     font-size: 2em;
 }
+
 
 /* RESPONSIVE */
 @media screen and (max-width: 1200px) {

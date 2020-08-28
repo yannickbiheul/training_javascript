@@ -10,11 +10,22 @@ function triangle(largeur) {
     }
 }
 
-triangle(10);
 
 
 /* Affichage de plusieurs étoiles en ordre croissant et pairs */
-
+function triangleCroissantPair(largeur) {
+    let ligne = "";
+    for (let positionLigne = 0; positionLigne <= largeur; positionLigne+= 2) {
+        for (let position = 0; position < positionLigne; position++) {
+            ligne+= "*";
+        }
+        if (positionLigne > 0) {
+            console.log(ligne + " " + positionLigne);
+        }
+        ligne = "";
+    }
+}
+triangleCroissantPair(20);
 
 /* Affichage de plusieurs étoiles en ordre croissant et impairs */
 

@@ -73,10 +73,13 @@ boutonReset.addEventListener('click', reset);
 
 
 // Conversion
+
+let image = document.querySelector(".imagePng");
+
 function conversion() {
     let userNumber = prompt(`Entrez un nombre`);
     let convert = Math.floor(userNumber * 6.55957);
     console.log(`${userNumber} € donne environ ${convert} Francs.`);
 }
 
-conversion();
+image.addEventListener("click", conversion);

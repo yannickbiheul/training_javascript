@@ -298,6 +298,16 @@ main {
     background-color: var(--red);
 }
 
+
+
+.imagePng {
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    cursor: pointer;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 1200px) {
     .boxEssai {

@@ -70,3 +70,13 @@ function reset() {
 boutonOk.addEventListener('click', ajouterNombre);
 boutonStop.addEventListener('click', calculMoyenne);
 boutonReset.addEventListener('click', reset);
+
+
+// Conversion
+function conversion() {
+    let userNumber = prompt(`Entrez un nombre`);
+    let convert = Math.floor(userNumber * 6.55957);
+    console.log(`${userNumber} € donne environ ${convert} Francs.`);
+}
+
+conversion();

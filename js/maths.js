@@ -110,3 +110,19 @@ function diviser(nombre1, nombre2) {
     let resultat = nombre1 / nombre2;
     alert(resultat);
 }
+
+function taillePoids() {
+    let taille = prompt("Entrez votre taille en cm");
+    let poids = prompt("Entrez votre poids en kg");
+    if (taille >= 180 && poids >= 80) {
+        alert("Vous êtes vachement costaud !");
+    } else if(taille < 180 && poids >= 80) {
+        alert("Vous êtes gros !");
+    } else if(taille > 180 && poids <= 80) {
+        alert("Vous êtes maigre");
+    } else {
+        alert("Vous n'entrez dans aucune catégorie.");
+    }
+}
+
+

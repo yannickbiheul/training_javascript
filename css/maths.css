@@ -343,6 +343,18 @@ main {
     color: #fff;
 }
 
+.taillePoids {
+    position: absolute;
+    top: 20%;
+    left: 200px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #fff; */
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 1200px) {
     .boxEssai {

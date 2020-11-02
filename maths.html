@@ -30,7 +30,15 @@
 
         <div class="separation" id="moyenne"></div>
 
-        <img class="imagePng" src="images/convertisseur.png">
+        <img class="imagePng" src="images/convertisseur.png" onclick="conversion('Euros', 6.55957, 'Francs')">
+        <button type="button" class="boutonCalcul" onclick="conversion('Mètres', 100, 'Centimètres')">Mètres / Centimètres</button>
+
+        <div class="calculatrice">
+            <div class="operateur addition" onclick="additionner()">+</div>
+            <div class="operateur soustraction" onclick="soustraire()">-</div>
+            <div class="operateur multiplication" onclick="multiplier()">x</div>
+            <div class="operateur division" onclick="diviser()">/</div>
+        </div>
 
         <div class="boxEssai">
             <h2>Moyenne</h2>

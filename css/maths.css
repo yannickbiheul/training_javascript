@@ -308,6 +308,41 @@ main {
     cursor: pointer;
 }
 
+.boutonCalcul {
+    position: absolute;
+    top: 50%;
+    right: 200px;
+    cursor: pointer;
+}
+
+.calculatrice {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 60%;
+    right: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2px;
+}
+
+.operateur {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.operateur:hover {
+    background-color: #000;
+    color: #fff;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 1200px) {
     .boxEssai {

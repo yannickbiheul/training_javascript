@@ -75,11 +75,38 @@ boutonReset.addEventListener('click', reset);
 // Conversion
 
 let image = document.querySelector(".imagePng");
+let boutonMetre = document.querySelector(".boutonCalcul");
 
-function conversion() {
+function conversion(unite1, taux, unite2) {
     let userNumber = prompt(`Entrez un nombre`);
-    let convert = Math.floor(userNumber * 6.55957);
-    console.log(`${userNumber} € donne environ ${convert} Francs.`);
+    let convert = userNumber * taux;
+    console.log(`${userNumber} ${unite1} donne ${convert} ${unite2}.`);
 }
 
-image.addEventListener("click", conversion);
+function additionner(nombre1, nombre2) {
+    nombre1 = Number(prompt("Entrez un nombre", "Votre nombre ici"));
+    nombre2 = Number(prompt("Entrez un deuxième nombre", "Votre nombre ici"));
+    let resultat = nombre1 + nombre2;
+    alert(resultat);
+}
+
+function soustraire(nombre1, nombre2) {
+    nombre1 = Number(prompt("Entrez un nombre", "Votre nombre ici"));
+    nombre2 = Number(prompt("Entrez un deuxième nombre", "Votre nombre ici"));
+    let resultat = nombre1 - nombre2;
+    alert(resultat);
+}
+
+function multiplier(nombre1, nombre2) {
+    nombre1 = Number(prompt("Entrez un nombre", "Votre nombre ici"));
+    nombre2 = Number(prompt("Entrez un deuxième nombre", "Votre nombre ici"));
+    let resultat = nombre1 * nombre2;
+    alert(resultat);
+}
+
+function diviser(nombre1, nombre2) {
+    nombre1 = Number(prompt("Entrez un nombre", "Votre nombre ici"));
+    nombre2 = Number(prompt("Entrez un deuxième nombre", "Votre nombre ici"));
+    let resultat = nombre1 / nombre2;
+    alert(resultat);
+}
